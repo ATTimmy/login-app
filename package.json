@@ -25,6 +25,7 @@
     "eject": "react-scripts eject",
     "format": "prettier --write .",
     "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint --fix . --max-warnings=0",
     "prepare": "husky install"
   },
   "eslintConfig": {
@@ -41,10 +42,9 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
-  },
+  },  
   "browserslist": {
     "production": [
       ">0.2%",
